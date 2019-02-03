@@ -9,10 +9,32 @@
 		body{
 			background-image:url(./images/dg.jpg);
 		}
+		@keyframes myfirst {
+			from {background:orange;}
+			to {background:blue;}
+		}
+		@keyframes mysecond {
+			from{opacity: 0;
+				background: greenyellow;}
+			to{
+				opacity: 100;
+				background: pink;}
+		}
+		h1,h2{
+			-webkit-animation: myfirst 2s infinite;
+			-o-animation: myfirst 2s infinite;
+			animation: myfirst 2s infinite;
+		}
+		p{
+			-webkit-animation: mysecond 5s infinite;
+			-o-animation: mysecond 5s infinite;
+			animation: mysecond 5s infinite;
+		}
 	</style>
 </head>
 <body>
 <h1>这是我的测试页面aaaaa</h1>
 <<h2>2019年2月</h2>
+<p>blablablablabal</p>
 </body>
 </html>
