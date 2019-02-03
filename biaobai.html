@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>
+        表白Page
+    </title>
+    <style type="text/css">
+        body{
+            background-image:url(./images/dg.jpg);
+        }
+        @keyframes myfirst {
+            from {background:orange;}
+            to {background:greenyellow;}
+        }
+        @keyframes mysecond {
+            0% {
+                opacity: 0;
+            }
+            25% {
+                opacity: 100;
+            }
+            50% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+        @keyframes mythird{
+            0%{opacity: 0;}
+            50%{opacity: 0;}
+            75%{opacity:100;}
+            100%{opacity: 0;}
+        }
+        h1,h2{
+            -webkit-animation: myfirst 2s infinite;
+            -o-animation: myfirst 2s infinite;
+            animation: myfirst 2s infinite;
+        }
+        p{
+            font-size: 14px;
+            position: absolute;
+            width: 100%;
+            text-align: center;
+
+        }
+        #one{
+            -webkit-animation: mysecond 9s infinite;
+            -o-animation: mysecond 9s infinite;
+            animation: mysecond 9s infinite;}
+        }
+        #two{
+            -webkit-animation: mythird 9s infinite;
+            -o-animation: mythird 9s infinite;
+            animation: mythird 9s infinite;
+        }
+    </style>
+</head>
+<body>
+<h1>张信哲-Jeff</h1>
+<h2>2019年2月</h2>
+<p id="one">是否对你承诺的太多</p>
+<p id="two">还是我原本给的就不够</p>
+<audio src="./wav/过火.m4a" autoplay="autoplay" controls="controls" loop="loop"/>
+</body>
+</html>
